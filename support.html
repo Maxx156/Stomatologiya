@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка — Сияющая Улыбка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a class="logo" href="index.html">Сияющая Улыбка</a>
+        <div class="top-nav__links">
+            <a href="index.html">Главная</a>
+            <a href="personnel.html">Персонал</a>
+            <a href="services.html">Наши услуги</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="support.html">Поддержка</a>
+        </div>
+    </nav>
+
+    <header class="sub-hero">
+        <h1>Поддержка пациентов</h1>
+        <p>Оставьте сообщение и мы свяжемся с вами в течение рабочего дня.</p>
+    </header>
+
+    <main class="section section--light">
+        <form class="form support-form" id="support-form">
+            <h3>Форма обратной связи</h3>
+            <label>
+                Имя
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Электронная почта
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Тема обращения
+                <select name="topic">
+                    <option value="booking">Запись на прием</option>
+                    <option value="question">Вопрос по лечению</option>
+                    <option value="feedback">Обратная связь</option>
+                </select>
+            </label>
+            <label>
+                Сообщение
+                <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary">Отправить</button>
+            <p class="form__status" id="support-status"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Сияющая Улыбка. Все права защищены.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
